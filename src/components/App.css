@@ -1,0 +1,16 @@
+.App {
+  width: 700px;
+  margin: 100px auto !important;
+  text-align: center;
+  color: #efefef;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.App p{
+  color: #ffffff;
+}
+
+.App img {
+  margin: 0 auto;
+}
