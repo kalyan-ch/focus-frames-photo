@@ -1,12 +1,44 @@
+
+import React from 'react';
 import './App.css';
-import logo from '../images/logo.png';
+import NavMenu from './NavMenu';
+import HomeContent from './HomeContent';
 
 const App = () => {
+
+  const items = [
+    {
+      name: 'Home',
+      type: 'text',
+      link: '',
+      index: 0
+    }, {
+      name: 'About Me',
+      type: 'text',
+      link: '',
+      index: 1
+    }, {
+      name: 'Photos',
+      type: 'text',
+      link: '',
+      index: 2
+    }, {
+      name: 'Contact',
+      type: 'text',
+      link: '',
+      index: 3
+    }, {
+      name: '',
+      type: 'icon',
+      link: 'https://instagram.com/focusframes_photo',
+      index: 4
+    }
+  ];
+
   return (
-    <div className="App ui massive message">
-      <img class="ui small image" alt='FocusFrames logo' src={logo} />
-      <h1 className='ui huge inverted header'>FocusFrames Photo</h1>
-      <p className='ui inverted'>Portraits, Landscapes, Prints</p>
+    <div>
+      <NavMenu items={items} />
+      <HomeContent />
     </div>
   );
 }
